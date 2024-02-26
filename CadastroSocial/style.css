@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(to right, #59CDFF , #87FFD4);
+    background-color: whitesmoke;
 }
 
 .roboto-condensed{
@@ -11,18 +11,62 @@ body{
     font-weight: 600;
 }
 .container {
-    width: 600px;
-    height: 600px;
-    background-color: whitesmoke;
+    background-color: lightblue;
     position: absolute; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    border-radius: 20px;   
+    border-radius: 20px; 
+    padding: 20px;  
+}
+
+.container > .title {
+   margin-left: 50px;
+   font-weight: 900;
+   font-size: 20px;
+   margin-bottom: 30ox;
+   color: #323232;
 }
 
 .content {
     align-items: center;
     margin-right: 90px;
-    padding: 59px;
+    margin-left: 60px; 
+    color: #FFF;
+}
+
+input {
+    width: 250px;
+    height: 29px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    background-color: beige;
+    font-size: 15px;
+    color: #323232;
+    padding: 5px 10px;
+    outline: none;
+
+}
+input::placeholder {
+    color: #666;
+    opacity: 0.8;
+  }
+
+
+
+button {
+    padding: 10px;
+    margin-top: 22px;
+    margin-left: 60px;
+    padding-inline: 150px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
