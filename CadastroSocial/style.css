@@ -17,16 +17,16 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     top: 50%; 
-    left: 50%; 
+    left: 55%; 
     transform: translate(-50%, -50%); 
     border-radius: 20px; 
     padding: 20px;  
 }
 
 .container > .title {
-   margin-left: 50px;
+   margin-left: 55px;
    font-weight: 900;
    font-size: 20px;
    margin-bottom: 30ox;
@@ -41,7 +41,7 @@ body{
 }
 
 input {
-    width: 250px;
+    width: 283px;
     height: 29px;
     border-radius: 10px;
     border: 2px solid black;
@@ -52,21 +52,46 @@ input {
     padding: 5px 10px;
     outline: none;
 
+
 }
 input::placeholder {
     color: #666;
     opacity: 0.8;
   }
 
+ input:focus {
+    border: 2px solid var(--input-focus);
+  }
+
 
 
 button {
-    padding: 10px;
-    margin-top: 22px;
-    margin-left: 60px;
-    padding-inline: 150px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
+    margin: 50px auto 0 auto;
+    width: 200px;
+    height: 37px;
+    border-radius:8px;
+    border: 2px solid black;
+    box-shadow: 5px 5px black;
+    font-size: 17px;
+    font-weight: 700;
+    color: #323232;
     cursor: pointer;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 120px;
+    gap: 10px;
+    
 }
+
+button:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+    box-shadow: 5px 5px black;
+    transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0
+  }
+
