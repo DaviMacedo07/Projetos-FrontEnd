@@ -9,9 +9,12 @@ html {
 body{
     font-family: "Roboto Condensed", "sans-serif";
     font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-.container {
-    background-color: lightblue;
+#container {
+    background-image: linear-gradient(130deg , rgb(159, 218, 238), rgb(51, 157, 192));
     position: absolute; 
     display: flex;
     flex-direction: column;
@@ -25,15 +28,17 @@ body{
     padding: 20px;  
 }
 
-.container > .title {
-   margin-left: 55px;
+#container > .title {
+   margin-left: 111px;
    font-weight: 900;
    font-size: 20px;
    margin-bottom: 30ox;
    color: #323232;
+   text-align: center;
+   justify-content: center ;
 }
 
-.content {
+#content{
     align-items: center;
     margin-right: 90px;
     margin-left: 60px; 

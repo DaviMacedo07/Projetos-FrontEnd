@@ -11,30 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <div class="title">
             <head>
-                <h1>Cadastre-se</h1>
+                <h1>New Account</h1>
             </head>
         </div>
-
-        <div class="content">
+        <form action="" id="form">
+        <div id="content">
             
-           <input type="text" placeholder="Username"> <br> <br>  <br> <br>
+           <input type="text" placeholder="Username" id="username"> <br> <br>  <br> <br>
 
-           <input type="email" placeholder="Email"> <br> <br> <br> <br>
+           <input type="email" placeholder="Email" id="email" required> <br> <br> <br> <br>
 
           
-           <input type="password" placeholder="Password"> 
+           <input type="password" placeholder="Password" id="senha"> 
         </div>
         <div id="footer">
             <footer class="botao">
-                <button>Cadastrar</button>
+                <button type="submit">Cadastrar</button>
             </footer>
 
         </div>
 
     </div>
+</form>
 
     <script src="index.js"></script>
 </body>
